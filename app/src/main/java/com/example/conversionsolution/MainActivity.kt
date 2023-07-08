@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val conversion_list = arrayOf("Select", "Distance", "Length", "Weight" )
+        val conversion_list = arrayOf("Select", "Weight", "Length", "Distance" )
         val conversion_spinner = findViewById<Spinner>(R.id.conversion_spinner)
         var conversion_adapter = ArrayAdapter(
             this,
