@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/indiana"
+    tools:context=".MainActivity">
+
+ <!-- starts spinner contains mass, length, distance, choose one -->
+    <Spinner
+        android:id="@+id/conversion_spinner"
+        android:layout_width="255dp"
+        android:layout_height="66dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.435"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.091" />
+    <!--Ends spinner contains mass, length, distance, choose one-->
+
+    <!--starts TextView contains name of app-->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="356dp"
+        android:layout_height="42dp"
+        android:text="Lets Start !"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.008" />
+    <!--Ends TextView contains name of app-->
+
+    <!-- starts display = -->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="="
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+    <!-- Ends display = -->
+
+    <!--starts spinner1 with list of units-->
+    <Spinner
+        android:id="@+id/conversion1"
+        android:layout_width="118dp"
+        android:layout_height="71dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/conversion_spinner"
+        app:layout_constraintVertical_bias="0.193" />
+    <!--Ends spinner1 with list of units-->
+
+    <!--starts spinner2 with list of units-->
+   <Spinner
+       android:id="@+id/conversion2"
+       android:layout_width="118dp"
+       android:layout_height="71dp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.908"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/conversion_spinner"
+       app:layout_constraintVertical_bias="0.193" />
+    <!--Ends spinner2 with list of units-->
+
+    <!--starts enter input in EditText-->
+    <EditText
+        android:id="@+id/input1"
+        android:layout_width="149dp"
+        android:layout_height="68dp"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/conversion1"
+        app:layout_constraintVertical_bias="0.086" />
+    <!--Ends enter input in EditText-->
+
+    <!--starts display output in TextView-->
+    <!-- TODO: change: android:background="@color/black"  -->
+    <TextView
+        android:id="@+id/input2"
+        android:layout_width="149dp"
+        android:layout_height="68dp"
+        android:background="#747574"
+        android:textAlignment="center"
+        android:textColor="#FFFF"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.893"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/conversion2"
+        app:layout_constraintVertical_bias="0.082" />
+    <!--Ends display output in TextView-->
+
+    <!--Starts submit button-->
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.806"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/conversion_spinner"
+        app:layout_constraintVertical_bias="0.514" />
+    <!--Ends submit button-->
+
+    <!--Start display error message-->
+    <TextView
+        android:id="@+id/error"
+        android:layout_width="183dp"
+        android:layout_height="58dp"
+        android:textColor="#FF0000"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/conversion_spinner"
+        app:layout_constraintVertical_bias="0.523" />
+    <!--Ends display error message-->
+</androidx.constraintlayout.widget.ConstraintLayout>
