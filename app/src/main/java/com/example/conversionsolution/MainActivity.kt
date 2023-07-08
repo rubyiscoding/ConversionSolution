@@ -1,7 +1,7 @@
 /*
----MideTerm Exam of Jav 1001---
-Rojan Baral
-A00233565
+---MidTerm Exam of Jav-1001---
+    Ruby Chaulagain
+    A00278592
  */
 
 package com.example.conversionsolution
